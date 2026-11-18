@@ -3,40 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин Веников</title>
+    <title>Банный Мир - Веники и аксессуары</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт Google Fonts для красоты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Магазин Веников "У Ивана"</h1>
-        <p>Лучшие веники для бани и дома</p>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">🌿</span> Банный Мир
+            </div>
+            <nav class="nav">
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="cart">
+                🛒 Корзина (<span id="cart-count">0</span>)
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="products">
-            <!-- Карточка 1 -->
-            <div class="product-card">
-                <h2>Веник Березовый</h2>
-                <p class="price">500 руб.</p>
-                <button class="buy-btn" data-product="Березовый">Купить</button>
-            </div>
-            <!-- Карточка 2 -->
-            <div class="product-card">
-                <h2>Веник Дубовый</h2>
-                <p class="price">600 руб.</p>
-                <button class="buy-btn" data-product="Дубовый">Купить</button>
-            </div>
-            <!-- Карточка 3 -->
-            <div class="product-card">
-                <h2>Веник Эвкалиптовый</h2>
-                <p class="price">700 руб.</p>
-                <button class="buy-btn" data-product="Эвкалиптовый">Купить</button>
-            </div>
-        </section>
-    </main>
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Идеальная баня начинается здесь</h1>
+            <p>Лучшие веники, травяные сборы и аксессуары с доставкой по всей России</p>
+            <button class="cta-button">Смотреть каталог</button>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Все права защищены.</p>
+    <!-- Каталог товаров -->
+    <section class="catalog container">
+        <h2 class="section-title">Популярные товары</h2>
+        
+        <div class="products-grid">
+            <!-- Товар 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=400&auto=format&fit=crop" alt="Березовый веник">
+                </div>
+                <div class="product-info">
+                    <h3>Веник Березовый</h3>
+                    <p class="price">500 ₽</p>
+                    <button class="buy-btn" data-name="Березовый">В корзину</button>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=400&auto=format&fit=crop" alt="Дубовый веник">
+                </div>
+                <div class="product-info">
+                    <h3>Веник Дубовый</h3>
+                    <p class="price">600 ₽</p>
+                    <button class="buy-btn" data-name="Дубовый">В корзину</button>
+                </div>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1611073558887-2cef83ee402c?q=80&w=400&auto=format&fit=crop" alt="Эвкалиптовый веник">
+                </div>
+                <div class="product-info">
+                    <h3>Веник Эвкалиптовый</h3>
+                    <p class="price">700 ₽</p>
+                    <button class="buy-btn" data-name="Эвкалиптовый">В корзину</button>
+                </div>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=400&auto=format&fit=crop" alt="Травяной сбор">
+                </div>
+                <div class="product-info">
+                    <h3>Травяной сбор</h3>
+                    <p class="price">400 ₽</p>
+                    <button class="buy-btn" data-name="Травяной сбор">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Банный Мир. Все права защищены.</p>
     </footer>
 
     <script src="script.js"></script>
